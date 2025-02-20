@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+/* 📌 Estilos para el input y el botón de búsqueda */
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 20px;
+  height: 50px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 12px;
+  font-size: 16px;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search button img {
+  width: 14px;
+}
+
+/* 📌 Estilos de la información del clima */
+.weather-icon {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.weather h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: -5px;
+}
+
+/* 📌 Sección de detalles (Humedad y Viento) */
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 30px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 35px;
+  margin-right: 8px;
+}
+
+.humidity, .wind {
+  font-size: 18px;
+  margin-top: -4px;
+}
+
+/* 📌 Mensaje de error */
+.error {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+  color: red;
+}
+
+/* 📱🔄 RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .card {
+      padding: 30px 20px;
+  }
+
+  .search input {
+      height: 45px;
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+
+  .search button {
+      width: 45px;
+      height: 45px;
+  }
+
+  .search button img {
+      width: 12px;
+  }
+
+  .weather h1 {
+      font-size: 50px;
+  }
+
+  .weather h2 {
+      font-size: 28px;
+  }
+
+  .details {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+  }
+
+  .col img {
+      width: 30px;
+  }
+
+  .humidity, .wind {
+      font-size: 16px;
+  }
+}
