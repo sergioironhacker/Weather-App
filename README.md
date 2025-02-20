@@ -1,2 +1,3 @@
 # Weather-App
-Weather App HTML CSS JS
+Weather App with API HTML CSS and JS 
+
